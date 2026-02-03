@@ -1,12 +1,17 @@
 import { SiSolana, SiEthereum } from "react-icons/si";
+import { DiNetbeans } from "react-icons/di";
+import { useState } from "react";
 
 function App() {
+  const[solana,setSolana]=useState();
+  const[ethereum,setEthereum]=useState();
   return (
-    <div className="bg-gray-700 min-h-screen">
+    <div className="bg-white min-h-screen">
       
       {/* Header */}
-      <div className="flex items-center p-8 w-full font-bold text-white bg-gray-600 text-5xl">
-        Solana Wallet
+      <div className="flex items-center p-8 w-full  font-bold text-white bg-gray-600 text-5xl">
+        <DiNetbeans size={50}/>
+         Solana Wallet
       </div>
 
       {/* Main Section */}
@@ -36,7 +41,7 @@ function App() {
       </div>
 
       {/* Footer */}
-      <div className="flex text-left text-white p-8">
+      <div className="flex text-left bg-gray-500 h-25 text-white p-8">
         Designed and Developed by Tushar Jadaun
       </div>
 
